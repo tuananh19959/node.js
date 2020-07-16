@@ -1,0 +1,32 @@
+[
+  {   "id":1,
+    "name": "hanoi",
+    "label": "Ha Noi",
+    "description": "ha noi, thu do Viet Nam",
+    "area": "3.359 km"
+  },
+  {   "id":2,
+    "name": "haiphong",
+    "label": "Hai Phong",
+    "description": "ha noi, thu do Viet Nam",
+    "area": "3.359 km"
+  },
+  {   "id":3,
+    "name": "cairo",
+    "label": "Cairo, Ai Cap",
+    "description": "ha noi, thu do Viet Nam",
+    "area": "3.359 km"
+  },
+  {   "id":4,
+    "name": "London",
+    "label": "Luan don, Anh",
+    "description": "ha noi, thu do Viet Nam",
+    "area": "3.359 km"
+  },
+  {   "id":5,
+    "name": "new york",
+    "label": "New York, My",
+    "description": "ha noi, thu do Viet Nam",
+    "area": "3.359 km"
+  }
+]

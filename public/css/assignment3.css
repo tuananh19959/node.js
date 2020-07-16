@@ -1,0 +1,38 @@
+div{
+    width: 70%;
+    height: 20%;
+    float: left;
+    border: 1px solid red;
+    margin: 5px;
+    padding: 15px;
+}
+.header{
+    background-color: red;
+    width: 70%;
+    height: 20%;
+    float: left;
+    border: 1px solid red;
+    margin: 10px;
+}
+div .image{
+    float: left;
+}
+div .ID{
+    float: left;
+}
+div.category{
+    float: right;
+    width: 20%;
+    height: 350px;
+    position: absolute;
+    top: 370px;
+    right: 30px;
+}
+div.post{
+    float: right;
+    width: 20%;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    height: 330px;
+}

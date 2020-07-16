@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event</title>
+</head>
+<body>
+    <button onclick="clickhere()">Click here to 18+</button>
+    <button onmouseenter="mouseTo()">Mouse over here to...</button>
+    <button onmouseleave="mouseLeave(this)">Mouse Leave...</button>
+    <button onmouseleave="mouseLeave(this)">Mouse Leave22222...</button>
+    <p onmouseleave="mouseLeave(this)">askdlashdklasjdlkasfjkjhsalkjklasjfklasjflashflkaksjflkasjfklasjd
+    </p>
+    <input onkeyup="keyDown(this)" type="text" name="abc" placeholder="Demo js with input"/>
+    <input onkeypress="keyPress(this)" type="text" placeholder="Demo 2"/>
+    <select name="select" onchange="select(this)">
+        <option value="1">value 1</option>
+        <option value="2">value 2</option>
+    </select>
+    <script type="text/javascript">
+        function clickhere() {
+            alert("April Fool!");
+        }
+        function mouseTo() {
+            alert("Mouse enter...")
+        }
+        function mouseLeave(e) {
+            alert(e.innerText);
+        }
+        function keyDown(e) {
+            if(event.keyCode == 13){
+                alert("Vua nhan phim enter");
+            }else{
+                console.log(e.value);
+            }
+        }
+        function keyPress(e) {
+            console.log(e.value);
+        }
+        function select(e) {
+            console.log("change value");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>menu</title>
+    <link rel="stylesheet" href="css/menu.css"/>
+</head>
+<body>
+    <ul class="menu">
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">Product</a>
+            <ul class="submenu">
+                <li>Product 1</li>
+                <li>Product 2</li>
+                <li>Product 3</li>
+                <li>Product 4</li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">SubCategory</a>
+            <ul class="submenu">
+                <li>Product 1</li>
+                <li>Product 2</li>
+                <li>Product 3</li>
+                <li>Product 4</li>
+            </ul>
+        </li>
+    </ul>
+<script type="text/javascript" src="JavaScript/jquery.js"></script>
+<script type="text/javascript">
+    $(".menu > li").bind("mouseenter",function () {
+        $(".submenu").hide();
+        $(this).children(".submenu").slideDown();
+    });
+    $(".menu > li").bind("mouseleave",function () {
+        $(".submenu").hide();
+    });
+</script>
+</body>
+</html>

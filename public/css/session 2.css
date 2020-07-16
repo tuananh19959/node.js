@@ -1,0 +1,23 @@
+body{
+    background-image: url("../images/Chrysanthemum.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 100px;
+    font-family: 'Be Vietnam';
+    font-weight: 400;
+    /*100 200 300 400(normal) 500 600 700(bold) 800 900 (binh thuong)-->*/
+    line-height: 200px
+    text-decoration: none;
+    text-align: center;
+    /*justify= can deu*/
+    /*<!--overline, line-through,underline-->*/
+    color: #ff11225;
+    /*<!--rgba(255,17,34,0.5-->*/
+    background-color: #F5F5DC;
+    border-top:1px solid #ff112290;
+    border-bottom: 1px solid #ff112290;
+}

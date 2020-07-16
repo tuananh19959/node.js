@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Data</title>
+</head>
+<body>
+    <form method="post" action="#">
+        <i class="fas fa-user"></i><label>Username</label><br/>
+<!--        action là nơi lắng nghe yêu cầu-->
+        <input type="text" class="input-text" name="username" placeholder="username" required/><br><br/>
+        <input type="email" class="input-text" name="email" placeholder="email" required><br><br/>
+        <input type="password" class="input-text" name="user_password" placeholder="Password" required/><br><br/>
+        <label><input type="checkbox" name="ready"/>I'm ready</label><br><br/>
+        <label><input type="radio" name="sex" value="male"/>Male</label><br/>
+        <label><input type="radio" name="sex" value="female"/>Female</label><br/>
+        <label><input type="radio" name="sex" value="other"/>Others</label><br/>
+<!--        chuyển tên để chọn cả-->
+        <br/>
+        <input type="date" class="input-text" name="birthday" placeholder="birthday"/><br/><br/>
+        <input type="time" class="input-text"name="time" placeholder="birth time"/><br/><br/>
+        <input type="month" class="input-text" name="month" placeholder="birth month"/><br/><br/>
+
+        <input type="color" name="my_color" placeholder="Color.."/><br/><br/>
+        <input type="number" class="input-text" name="money" placeholder="Money.."/><br/><br/>
+        <input type="range" name="volume" min="0" max="100" placeholder="Volumes.."/><br/><br/>
+        <input type="file" name="avatar" placeholder="Avatar.."/><br/><br/>
+        <input type="hidden" name="_token" value="server_token"/>
+
+        <select name="faculty">
+            <option value="math">math</option>
+            <option value="machine">machine</option>
+            <option value="computer">computer</option>
+            <option value="nuclear">nuclear</option>
+            <option value="air_pilot">air pilot</option>
+        </select><br/><br/>
+
+        <textarea name="CV" rows="5" cols="100" placeholder="tiểu sử bản thân"></textarea>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button">Button</button>
+<!--        button để tránh làm mất dữ liệu nhập-->
+    </form>
+    <link rel="stylesheet" type="text/css" href="libs/FontAwesome/css/all.css"
+    <link rel="stylesheet" href="css/session%205%20form.css"/>
+</body>
+</html>

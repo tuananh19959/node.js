@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: #333333;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #f2f2f2;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    background-color: #ffffff;
+    text-align: justify;
+    padding: 40px 0;
+    height: 30%;
+}
+.header-left{
+    float: left;
+    width: 20% 0;
+}
+.header-right{
+    float: right;
+    width: 20% 0;
+}
+.menu li{
+    float: left;
+    margin-left: 35px;
+    padding: 10px 0;
+}
+.menu li a{
+    float: left;
+    font-size: 18px;
+    text-transform: none;
+    /*uppercase lowercase capitalize*/
+    color: #333131;
+}
+.intro{
+    background-color: cadetblue;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+}
+.topnav span{
+    float: left;
+    width: 33.33%;
+    list-style: none;
+    border: 0.5px solid white;
+    background-color: cadetblue;
+}
+.topnav span a{
+    float: left;
+    font-size: 18px;
+    text-transform: none;
+    color: white;
+    text-align: center;
+}
+.main{
+    float: left;
+    box-sizing: border-box;
+}
+.category li{
+    float: left;
+    padding: 10px;
+}
+.category li a{
+    float: left;
+    font-size: 18px;
+    color: black;
+}
+.shop{
+    float: left;
+}
+.div1{
+    float: left;
+    box-sizing: border-box;
+    width: 30%;
+}

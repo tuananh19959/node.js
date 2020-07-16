@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>du bao thoi tiet</title>
+</head>
+<body>
+    <h1 id="heading">WEATHER NEWS</h1>
+    <h2 id="sub-heading1">Town:</h2>
+    <h2 id="sub-heading2">Country:</h2>
+    <h2 id="sub-heading3">Temperature:</h2>
+    <h2 id="sub-heading4">Pressure:</h2>
+    <h2 id="sub-heading5">Humid:</h2>
+    <h2 id="sub-heading6">Temp-Min:</h2>
+    <h2 id="sub-heading7">Temp-Max:</h2>
+    <h2 id="sub-heading8">Wind-Speed:</h2>
+    <script type="text/javascript">
+        let TueWeather = {
+            weather:
+                [
+                    {
+                        Main : "cloudy" ,
+                        description : "have many clouds"
+                    }
+                ],
+            base : "stations",
+            main :{
+                temp :87.80000,
+                pressure :1001,
+                humidity :100,
+                temp_min :84.20000,
+                temp_max :102.2000,
+            },
+            wind :{
+                speed :13,
+            },
+            name : "Ha Noi",
+            id: "Viet Nam"
+        }
+        let h1 = document.getElementById("heading");
+        let h2_s1 = document.getElementById("sub-heading1");
+        h2_s1.innerText = h2_s1.innerText+ TueWeather.name;
+        let h2_s2 = document.getElementById("sub-heading2");
+        h2_s2.innerText = h2_s2.innerText+ TueWeather.id;
+        let h2_s3 = document.getElementById("sub-heading3");
+        h2_s3.innerText = h2_s3.innerText+ TueWeather.main.temp;
+        let h2_s4 = document.getElementById("sub-heading4");
+        h2_s4.innerText = h2_s4.innerText+ TueWeather.main.pressure;
+        let h2_s5 = document.getElementById("sub-heading5");
+        h2_s5.innerText = h2_s5.innerText+ TueWeather.main.humidity;
+        let h2_s6 = document.getElementById("sub-heading6");
+        h2_s6.innerText = h2_s6.innerText+ TueWeather.main.temp_min;
+        let h2_s7 = document.getElementById("sub-heading7");
+        h2_s7.innerText = h2_s7.innerText+ TueWeather.main.temp_max;
+        let h2_s8 = document.getElementById("sub-heading8");
+        h2_s8.innerText = h2_s8.innerText+ TueWeather.wind.speed;
+    </script>
+</body>
+</html>

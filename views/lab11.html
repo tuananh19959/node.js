@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>countdown</title>
+</head>
+<body>
+    <input type="number" min="0" id="inputTime"/>
+    <span id="min">10</span>:<span id="sec">00</span>
+    <button onclick="startClock();">Start</button>
+    <script type="text/javascript">
+        function startClock() {
+            let min = parseInt(document.getElementById("inputTime").value);
+            if(isNaN(min)){
+                alert("Nhap gia tri ko dung");
+                return;
+            }
+            let sec = 59;
+            min--;
+            let clock = setInterval(function () {
+                // let min_txt = min >= 10 ? min : "0" + min;
+                // let sec_txt = sec >= 10 ? min : "0" + sec;
+                // console.log(min + ":" + sec);
+                document.getElementById("min").innerText = (min>=10?min:"0"+min);
+                document.getElementById("sec").innerText = (sec>=10?sec:"0"+sec);
+                sec--;
+                if (sec < 0) {
+                    min--;
+                    sec = 59;
+                }
+                if (min < 0) clearInterval(time);
+            },1000);
+        }
+    </script>
+</body>
+</html>

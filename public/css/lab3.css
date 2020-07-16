@@ -1,0 +1,21 @@
+div{
+    width: 50%;
+    height: 20%;
+    float: left;
+    border: 1px solid red;
+}
+div .image{
+    float: left;
+}
+div .price{
+    float: right;
+}
+.Concerts{
+    text-align: center;
+}
+.Sports{
+    text-align: center;
+}
+.Keynotes{
+    text-align: center;
+}

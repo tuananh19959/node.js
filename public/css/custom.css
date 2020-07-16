@@ -1,0 +1,22 @@
+/*.a{*/
+/*    width: 800px;*/
+/*}*/
+/*.b{*/
+/*    background-color: #2aabd2;*/
+/*}*/
+/*.c{*/
+/*    background-color: green;*/
+/*    height: 300px;*/
+/*}*/
+/*.d{*/
+/*    background-color: yellow;*/
+/*    height: 300px;*/
+/*}*/
+/*.e{*/
+/*    background-color: #21c500;*/
+/*    height: 300px;*/
+/*}*/
+.section{
+    width: 100%;
+    float: left;
+}

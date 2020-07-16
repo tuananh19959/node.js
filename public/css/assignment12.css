@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 800px;
+}
+.section{
+    width: 100%;
+    float: left;
+    color: white;
+}
+.price{
+    background-color: orange;
+}
+.container{
+    width: 20%;
+    background-color: yellow;
+}
+.container1{
+    width: 20%;
+    background-color: green;
+}
+.container2{
+    width: 20%;
+    background-color: red;
+}
+.container3{
+    width: 20%;
+    background-color: blue;
+}
+.container4{
+    width: 20%;
+    background-color: #00CC00;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <select id="select">
+        <option value="Hanoi,Vietnam">Hanoi</option>
+        <option value="Saigon,Vietnam">Saigon</option>
+        <option value="Haiphong,Vietnam">Haiphong</option>
+    </select>
+    <h1 id="city"></h1>
+    <h3 id="temp"></h3>
+    <h3 id="press"></h3>
+    <h3 id="hum"></h3>
+    <h3 id="temp_min"></h3>
+    <h3 id="temp_max"></h3>
+    <h3 id="sea-lv"></h3>
+<script type="text/javascript" src="JavaScript/jquery.js"></script>
+<script type="text/javascript">
+    let api_url="http://api.openweathermap.org/data/2.5/weather?q=Hanoi,vietnam&appid=09a71427c59d38d6a34f89b47d75975c";
+    $.ajax({
+        url: api_url,
+        method:"GET",
+        data:{
+            q:"Hanoi,Vietnam",
+            appid:"09a71427c59d38d6a34f89b47d75975c",
+            units:"metric"
+        },
+        success: function (rs) {
+            console.log(rs)
+            $("#city").text(rs.name+ " - "+rs.sys.country)
+            $("#temp").text(rs.main.temp);
+            $("#press").text(rs.main.pressure);
+            $("#hum").text(rs.main.humidity);
+            $("#temp_min").text(rs.main.temp_min);
+            $("#temp_max").text(rs.main.temp_max);
+            $("#sea-lv").text(rs.main.sea_level);
+        }
+    });
+    $("#select").bind("change",function () {
+        let value = $(this).val();
+        $.ajax({
+            url: api_url,
+            method:"GET",
+            data:{
+                q: value,
+                appid:"09a71427c59d38d6a34f89b47d75975c",
+                units:"metric"
+            },
+            success: function (rs) {
+                console.log(rs)
+                $("#city").text(rs.name+ " - "+rs.sys.country)
+                $("#temp").text(rs.main.temp);
+                $("#press").text(rs.main.pressure);
+                $("#hum").text(rs.main.humidity);
+                $("#temp_min").text(rs.main.temp_min);
+                $("#temp_max").text(rs.main.temp_max);
+                $("#sea-lv").text(rs.main.sea_level);
+            }
+        });
+    })
+</script>
+</body>
+</html>

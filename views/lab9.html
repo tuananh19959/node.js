@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="css/lab9.css"/>
+</head>
+<body>
+    <ul class="tab">
+        <li><a href="javascript:void(0)" onclick="navTab(0)">Home</a></li>
+        <li><a href="javascript:void(0)" onclick="navTab(1)">Profile</a></li>
+        <li><a href="javascript:void(0)" onclick="navTab(2)">Messages</a></li>
+        <li><a href="javascript:void(0)" onclick="navTab(3)">Setting</a></li>
+    </ul>
+    <div class="content">
+        <div class="content_all" id="content_all">
+            <div id="home" class="tabscontent">Home content</div>
+            <div id="profile" class="tabscontent">Profile content</div>
+            <div id="messages" class="tabscontent">Messages content</div>
+            <div id="setting" class="tabscontent">Setting content</div>
+        </div>
+    </div>
+<script type="text/javascript">
+    function navTab(e) {
+        let tabs = document.getElementsByClassName("tabscontent");//collection
+        for (let i=0;i<tabs.length;i++){
+             tabs[i].style.display = "none";
+        }
+        let id = e.getAttribute("href");
+        id = id.replace("#","");
+        document.getElementById(id).style.display = "block";
+        document.getElementById("content_all").style.transform = "translateX(-"+(e*400)+"px)";
+    }
+    // setTimeout(function () {
+    //     // alert("Intruder Alert!!");
+    // },3000);
+    // let f = 0;
+    // var stv = setInterval(function () {
+    //     alert("1 person access the web");
+    //     f++;
+    //     if(f>4){
+    //         clearInterval(stv);
+    //     }
+    // },3000);
+</script>
+</body>
+</html>

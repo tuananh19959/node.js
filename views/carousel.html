@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <form data-toggle="validator" role="form" action="#" method="get">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>First Name</label>
+                            <input name="fn" type="text" class="form-control" required/>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Last Name</label>
+                            <input name="ln" type="text" class="form-control" required/>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input name="email" type="email" class="form-control" required/>
+                    <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-danger">Register</button>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </form>
+        </div>
+    </section>
+<script type="text/javascript" src="JavaScript/jquery.js"></script>
+<script type="text/javascript" src="JavaScript/validator.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: #333333;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #f2f2f2;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+.header,.main,.footer{
+    float: left;
+    width: 100%;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.header-left{
+    float: left;
+    width: 20%;
+}
+.header-right{
+    float: right;
+    width: 60%;
+}
+.div4{
+    float: left;
+    width: 66.67%;
+}
+.header{
+    padding: 20px 0;
+    background-color: #ffffff;
+}
+.div4{
+    width: 50%;
+}
+.intro{
+    background-color: red;
+    float: left;
+    border: 1px solid red;
+    margin: 5px;
+    padding: 5px;
+    width: 98%;
+}
+.Logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #333131;
+}
+.menu li:first-child{
+    list-style: none;
+}
+.menu li{
+    float: left;
+    margin-left: 35px;
+    padding: 10px 0;
+}
+.menu li a{
+    float: left;
+    font-size: 18px;
+    text-transform: none;
+    color: #333131;
+}
+.content{
+    float: left;
+    border: 1px solid red;
+    margin: 5px;
+    padding: 5px;
+}
+.right{
+    float: left;
+    width: 50%;
+}
+.post{
+    float: left;
+    border: 1px solid red;
+    margin: 5px;
+    width: 65%;
+}
+.category{
+    float: left;
+    border: 1px solid red;
+    margin: 5px;
+    width: 40%;
+}
+.main{
+    margin: 5px;
+    padding: 5px;
+}
+.div2{
+    background-color: red;
+    color: white;
+}

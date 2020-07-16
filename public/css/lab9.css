@@ -1,0 +1,26 @@
+.tab{
+    float: left;
+    width: 100%;
+}
+.tab li{
+    float: left;
+    margin-right: 20px;
+}
+.content_all{
+    float: left;
+    width: 1600px;
+    height: 200px;
+    transition: all 300ms;
+}
+.content{
+    float: left;
+    width: 400px;
+    height: 200px;
+    border: 1px solid #cccccc;
+    overflow: hidden;
+}
+.tabscontent{
+    float: left;
+    width: 400px;
+    height: 200px;
+}

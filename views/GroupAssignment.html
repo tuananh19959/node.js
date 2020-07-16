@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Session1</title>
+    <style>
+        .mainSection1{
+            background-image: url("images/fttbackground.jpg");
+            background-position: center;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        #wholeContainer{
+            margin-left: 380px;
+            /*margin-right: 380px;*/
+        }
+        #leftContainer{
+            float: left;
+            width: 40%;
+        }
+        #rightContainer{
+            float: right;
+            width: 350px;
+        }
+        #bookingPopup{
+            background-color: #C09457   ;
+            padding: 20px;
+            /*border-radius: 10px;*/
+        }
+        .popupInputField{
+            display: block;
+            background-color: white;
+            width: 95%;
+            padding: 5px;
+            color: saddlebrown;
+            border-radius: 5px;
+        }
+    </style>
+    <link rel="stylesheet" href="bootstrap-3.3.7/dist/css/bootstrap.css">
+</head>
+<body>
+<section class="mainSection1">
+    <div id="wholeContainer">
+        <div class="row">
+            <div id="leftContainer">
+                <br>
+                <br>
+                <h3 style="color: white">
+                    Feel the taste
+                </h3>
+                <h1 style="color: white">
+                    More than coffee & Tea
+                </h1>
+                <h3 style="color: yellow">
+                    Flat 20% Discount
+                </h3>
+                <p style="color: white">
+                    Sed a dui at sapien porttitor placer pendssee nutrumorem efficitur nibh condimentum.
+                </p>
+                <br>
+                <button type="button" style="
+                background-color: saddlebrown;
+                padding: 10px;
+                border-radius: 15px;
+                text-align: center;
+                color: white">
+                    Shop now!
+                </button>
+            </div>
+            <div id="rightContainer">
+                <form id="bookingPopup">
+                    <h3 style="
+                text-align: center;
+                color: white;
+                ">
+                        Reserve
+                    </h3>
+                    <h1 style="
+                text-align: center;
+                color: white;
+                ">
+                        Your Table
+                    </h1>
+                    <input type="text" name="name" placeholder="Your Name" class="popupInputField">
+                    </input>
+                    <br>
+                    <input type="email" name="email" placeholder="Your Email" class="popupInputField">
+                    </input>
+                    <br>
+                    <input type="number" name="phone" placeholder="Your Phone" class="popupInputField">
+                    </input>
+                    <br>
+                    <input type="date" name="date" placeholder="mm/dd/yyyy" class="popupInputField">
+                    </input>
+                    <br>
+                    <input type="time" name="time" class="popupInputField">
+                    </input>
+                    <br>
+                    <br>
+                    <div style="text-align: center">
+                        <button style="background-color: saddlebrown" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1">
+                            Book a table
+                        </button>
+                        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel1">Login</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form method="GET" action="#">
+                                            <div class="form-group" style="padding-left: 10px">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <label><i class="glyphicon glyphicon-user"></i>Username</label>
+                                                        <input class="form-control" type="text" name="name" placeholder="Firstname"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group" style="padding-left: 10px">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <label ><i class="glyphicon glyphicon-lock"></i> Password</label>
+                                                        <input class="form-control" type="password" name="password" placeholder="Password"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" style="background-color: saddlebrown">Login</button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section style="
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: -70px;
+    margin-bottom: 0px;
+    padding: 50px 0px 80px 0px;
+    background-color: lightgray;
+    text-align: center;
+    overflow: hidden"
+         class="trungSection2">
+    <h3 style="text-align: center">
+        Choose your coffee
+    </h3>
+    <h2 style="
+    color: #271E1A;
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: Poppins, Sans-serif;">
+        Products
+    </h2>
+    <div style="display: inline-block;text-align: center">
+        <div style="float: left; padding-right: 10px" class="product">
+            <img src="images/productList.jpg">
+            <h3 class="product-name">
+                AMERICAN COFFEE
+            </h3>
+            <p>
+                $6.99
+            </p>
+            <button style="
+                padding: 10px;
+                border-radius: 20px;
+                border: 2px solid saddlebrown">
+                ADD TO CART
+            </button>
+        </div>
+        <div style="float: left; padding-left: 10px; padding-right: 10px">
+            <img src="images/productList.jpg">
+            <h3>
+                COST RICA LIGHT
+            </h3>
+            <p>
+                $6.99
+            </p>
+            <button style="
+                padding: 10px;
+                border-radius: 20px;
+                border: 2px solid saddlebrown">
+                ADD TO CART
+            </button>
+        </div>
+        <div style="float: left; padding-left: 10px; padding-right: 10px">
+            <img src="images/productList.jpg">
+            <h3 class="product-name">
+                JAMAICAN MOUNTAN
+            </h3>
+            <p>
+                $6.99
+            </p>
+            <button style="
+                padding: 10px;
+                border-radius: 20px;
+                border: 2px solid saddlebrown">
+                ADD TO CART
+            </button>
+        </div>
+        <div style="float: left; padding-left: 10px">
+            <img src="images/productList.jpg">
+            <h3>
+                ETHOPIAN FANCY
+            </h3>
+            <p>
+                $6.99
+            </p>
+            <button style="
+                padding: 10px;
+                border-radius: 20px;
+                border: 2px solid saddlebrown">
+                ADD TO CART
+            </button>
+        </div>
+    </div>
+</section>
+</body>
+</html>
+<section style="padding: 60px; padding-right: 380px; padding-left: 380px; display: inline-block"; class="trungSection3">
+    <div style="float: left; width: 20%;">
+        <h2>
+            More than
+        </h2>
+        <h1 style="font-family: 'American Typewriter';font-size: 70px;color: saddlebrown">
+            999+
+        </h1>
+        <h2 style="font-family: 'American Typewriter';font-size: 35px">
+            Customers trust us
+        </h2>
+        <div style="width: 100%; text-align: center">
+        <span style="padding: 15px; background-color: saddlebrown; color: white; border-radius: 20px">
+                View all testimonials
+        </span>
+        </div>
+    </div>
+    <div style="float: left">
+        <img style="max-width: 80%;max-height: 80%" src="images/Testinomials.jpg">
+    </div>
+    <div style="float: right;width: 30%">
+        <h3>
+            Become
+        </h3>
+        <h1>
+            Our Dealer
+        </h1>
+        <p style="color: blueviolet;">
+            Sed a dui at sapien porttitor placer pendssee rutrumor efficitur nibh condimentum aci Nam lorem libero, impimat, fermentumy vehicula nulla. Aenean gravida lnon lorem egesta tristque extin. Morbiat libero eleifematae vitae, lacnelis.
+        </p>
+        <br>
+        <div>
+            <span style="margin: 5px;padding: 10px;border-radius: 15px;background-color: black;color: white">
+                    Become a Dealer
+            </span>
+            <span style="margin: 5px;padding: 10px;border-radius: 15px;background-color: saddlebrown;color: white">
+                    Contact us
+            </span>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" src="JavaScript/jquery.js"></script>
+<script src="bootstrap-3.3.7/dist/js/bootstrap.js"></script>
+<script>
+    // Instantiate the Bootstrap carousel
+    $('.multi-item-carousel').carousel({
+        interval: false
+    });
+    // for every slide in carousel, copy the next slide's item in the slide.
+    // Do the same for the next, next item.
+    $('.multi-item-carousel .item').each(function(){
+        var next = $(this).next();
+        if (!next.length) {
+            next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+        if (next.next().length>0) {
+            next.next().children(':first-child').clone().appendTo($(this));
+        } else {
+            $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+        }
+    });
+</script>
+</body>
+</html>

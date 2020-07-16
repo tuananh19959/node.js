@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>abc</title>
+    <style>
+        .mainSection1{
+            background-image: url("fttbackground.jpg");
+            overflow: hidden;
+        }
+        #wholeContainer{
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        #leftContainer{
+            float: left;
+            width: 40%;
+        }
+        #rightContainer{
+            float: right;
+            width: 30%;
+        }
+        #bookingPopup{
+            background-color: orange;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .popupInputField{
+            display: block;
+            background-color: white;
+            width: 95%;
+            padding: 5px;
+            color: saddlebrown;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <section class="mainSection1">
+    <div id="wholeContainer">
+        <div id="leftContainer">
+            <br>
+            <br>
+            <h3 style="color: white">
+                Feel the taste
+            </h3>
+            <h1 style="color: white">
+                More than coffee & Tea
+            </h1>
+            <h3 style="color: yellow">
+                Flat 20% Discount
+            </h3>
+            <p style="color: white">
+                Sed a dui at sapien porttitor placer pendssee nutrumorem efficitur nibh condimentum.
+            </p>
+            <br>
+            <button type="button" style="
+                background-color: saddlebrown;
+                padding: 10px;
+                border-radius: 15px;
+                text-align: center;
+                color: white">
+                Shop now!
+            </button>
+        </div>
+        <div id="rightContainer">
+            <form id="bookingPopup">
+                <h3 style="
+                text-align: center;
+                color: white;
+                ">
+                    Reserve
+                </h3>
+                <h1 style="
+                text-align: center;
+                color: white;
+                ">
+                    Your Table
+                </h1>
+                <input type="text" name="name" placeholder="Your Name" class="popupInputField">
+                </input>
+                <br>
+                <input type="email" name="email" placeholder="Your Email" class="popupInputField">
+                </input>
+                <br>
+                <input type="number" name="phone" placeholder="Your Phone" class="popupInputField">
+                </input>
+                <br>
+                <input type="date" name="date" placeholder="mm/dd/yyyy" class="popupInputField">
+                </input>
+                <br>
+                <input type="time" name="time" class="popupInputField">
+                </input>
+                <br>
+                <br>
+                <div style="text-align: center">
+                <button type="submit" style="
+                    background-color: saddlebrown;
+                    color: white;
+                    padding: 12px;
+                    border-radius: 15px">
+                    Book a table
+                </button>
+                </div>
+                <br>
+            </form>
+        </div>
+    </div>
+    </section>
+
+</body>
+</html>

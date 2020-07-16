@@ -1,0 +1,21 @@
+h1 {
+    font-size: 13px;
+    font-family: 'Arial';
+    text-align: right;
+    border-top: solid;
+    border-color: red;
+    font-weight: 400;
+}
+h2 {
+    font-size: 13px;
+    font-family: 'Arial';
+    text-align: left;
+    color: red;
+    border-top: solid;
+    border-color: red;
+}
+h3 {
+    font-size: 13px;
+    font-family: 'Arial';
+    text-align: center;
+}

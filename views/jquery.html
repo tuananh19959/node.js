@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+    <script src="JavaScript/jquery.js" type="text/javascript"></script>
+</head>
+<body>
+    <p class="pp">doan van so 1</p>
+    <p class="pp">doan van so 2</p>
+    <p class="pp">doan van so 3</p>
+    <ul class="list">
+        <li>Ramen</li>
+        <li>Bread</li>
+        <li>Sticky Rice</li>
+        <li>chicken rice</li>
+    </ul>
+    <button onclick="Open()">Open</button>
+    <button onclick="Close()">Close</button>
+    <button onclick="Auto()">Auto</button>
+    <button class="move">Move</button>
+<script type="text/javascript">
+    // let px = $("p.pp");
+    $("p.pp").css("color","red");
+    $("ul > li:first-child").css("color","green");
+    $("ul li:first-child").next().css("color","orange");
+    $("ul li:first-child").parent().css("background-color","yellow");
+    $("ul > li:last-child").css({
+        "color":"blue",
+        "background-color":"gray"
+    });
+    // let txt = $("ul li :first-child").text();
+    $("ul li:first-child").text($("ul li:first-child").text()+" egg");
+    $("ul li:first-child").html("<h1>Bread with egg<h1/>");
+    $("ul li:first-child").addClass("active");
+    function Open() {
+        // $("ul").show();
+        // $("ul").fadeIn(1000);
+        $("ul").slideDown();
+    }
+    function Close() {
+        // $("ul").hide();
+        // $("ul").fadeOut(1000);
+        $("ul").slideUp();
+    }
+    function Auto() {
+        // $("ul").toggle();
+        // $("ul").fadeToggle();
+        $("ul").slideToggle();
+    }
+    // function Move() {
+    //     if($("ul").hasClass("active")){
+    //         $("ul").animate({
+    //             "margin-left":"0px"
+    //         },500);
+    //         $("ul").removeClass("active");
+    //     }else{
+    //         $("ul").animate({
+    //             "margin-left":"200px"
+    //         },500);
+    //         $("ul").addClass("active");
+    //     }
+    // }
+    $(".move").bind("click",function () {
+        if($("ul").hasClass("active")){
+            $("ul").animate({
+                "margin-left":"0px"
+            },500);
+            $("ul").removeClass("active");
+        }else{
+            $("ul").animate({
+                "margin-left":"200px"
+            },500);
+            $("ul").addClass("active");
+        }
+    })
+    $(".list").bind("mouseenter",function () {
+        console.log("mouse enter list");
+    });
+</script>
+</body>
+</html>

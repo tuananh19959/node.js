@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>session 8-2</title>
+</head>
+<body>
+    <h1 id="heading">Tieu de trang</h1>
+    <h2 id="sub-heading1">Giao vien:</h2>
+    <h2 id="sub-heading2">Phong hoc:</h2>
+    <h3>Danh sach sinh vien</h3>
+    <ul id="students"></ul>
+<script type="text/javascript">
+    // DOM: Document Object Model
+    let classObj = {
+        name: "T2004E",
+        room: " A8",
+        teacher:{
+            name: " Trinh Quang Hoa",
+            age: "18"
+        },
+        dssv:[
+            {
+                name: "Le Hong Viet",
+                age: "19"
+            }
+        ]
+    }
+    let h1 = document.getElementById("heading");
+    // console.log(h1.innerText);
+    // h1.innerText = "xin chao cac ban";
+    // h1.style.color = "red";
+    // h1.style.backgroundColor = "yellow";
+    // h1.style.borderBottom = "1px solid green";
+    // h1.innerHTML = "<i>"+h1.innerText+"</i>";
+    h1.innerText = h1.innerText+ classObj.name;
+    let h2_s1 = document.getElementById("sub-heading1");
+    h2_s1.innerText = h2_s1.innerText+ classObj.teacher.name;
+    let h2_s2 = document.getElementById("sub-heading2");
+    h2_s2.innerText = h2_s2.innerText+ classObj.room;
+    let ul = document.getElementById("students");
+    classObj.dssv.map(function (e) {
+       let li = "<li>"+e.name+"</li>";
+       ul.innerHTML = ul.innerHTML+li;
+    });
+    // for (let i=0;i<classObj.dssv.length;i++) {
+    //     let li = "<li><b>"+classObj.dssv[i].name+"</b>  <i>"+classObj.dssv[i].age+"</i></li>";
+    //     ul.innerHTML = ul.innerHTML+li;
+    // }
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VietLot</title>
+    <script type="text/javascript">
+        function lottery() {
+            var num = 10+Math.round(Math.random()*5);
+            var doan = prompt("chon so thu nhat");
+            var doan = prompt("chon so thu hai");
+            var doan = prompt("chon so thu ba");
+            var doan = prompt("chon so thu tu");
+            var doan = prompt("chon so thu nam");
+            // var x = a,b,c,d,e;
+            if(Number(doan)==num){
+                alert("The number is"+ num+".Jackpot");
+            }else{
+                alert("Loser");
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        lottery();
+    </script>
+</body>
+</html>

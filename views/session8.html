@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>session 8</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let obj = {
+            // var cung dc
+            name : "Nguyen Van An",
+            // dung day phay, ko dc dung cham phay
+            age : 18,
+            address: "8 Ton That Thuyet",
+            run : function () {
+                console.log(this.name+ " is running...");
+                // this: doi tuong ngam dinh ben trong script
+            },
+            girlfriends:[
+                // []: ngoac ham
+                "Ngoc Trinh","Phuong Trinh"
+            ],
+            GoToHotel: function(){
+                // for (let i=0;i<this.girlfriends.length;i++){
+                //     console.log("Di hotel voi" +this.girlfriends[i]);
+                // }
+                this.girlfriends.map(function (e) {
+                    console.log("Di hotel voi" +e)
+                })
+            },
+            children:{
+                name: "Nguyen Van Binh",
+                birthday: "22-05-1999",
+                playGame: function(){
+                    console.log("playing game..")
+                    return this;
+                },
+                children:{
+                    name: "Nguyen Van Nam",
+                    eat: function () {
+                        console.log("Uong sua");
+                        return this;
+                    },
+                    sleep: function () {
+                        console.log("di ngu...");
+                        return this;
+                    }
+                }
+            }
+        };
+        console.log(obj.name);
+        console.log(obj.address);
+        obj.run();
+        console.log("ten cua con la:" +obj.children.name)
+        console.log("ten cua chau;" +obj.children.children.name);
+        obj.children.children.eat();
+        obj.children.children.eat().sleep();
+        obj.name = "Nguyen Van Anh";
+        console.log(obj.name);
+    </script>
+</body>
+</html>
